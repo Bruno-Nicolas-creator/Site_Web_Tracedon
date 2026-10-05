@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/*
+ * Identité TraceDon, commune avec l'application (Dons Invendus, src/app/globals.css) :
+ * vert sapin, fond crème, encre brune, accent terracotta ; Fraunces pour les titres,
+ * Public Sans pour le texte.
+ *
+ * Plutôt que de réécrire chaque composant, on redéfinit ici les palettes Tailwind
+ * utilisées par la vitrine : « emerald » devient le vert sapin, « slate » les gris chauds,
+ * « rose » et « amber » l'accent terracotta (alertes moins agressives que le rouge vif).
+ */
+@theme {
+  --color-emerald-50: #eef5f0;
+  --color-emerald-100: #e2eee6;
+  --color-emerald-200: #c6ddcd;
+  --color-emerald-300: #9cc4a9;
+  --color-emerald-400: #6aa27f;
+  --color-emerald-500: #4a8a65;
+  --color-emerald-600: #3b7c59;
+  --color-emerald-700: #33724f;
+  --color-emerald-800: #2e6b4e;
+  --color-emerald-900: #1e4b36;
+  --color-emerald-950: #143424;
+
+  --color-slate-50: #f6f4ee;
+  --color-slate-100: #efebe1;
+  --color-slate-200: #e1dccf;
+  --color-slate-300: #cdc6b6;
+  --color-slate-400: #a39b8b;
+  --color-slate-500: #6f685c;
+  --color-slate-600: #6b6459;
+  --color-slate-700: #4d4840;
+  --color-slate-800: #34312b;
+  --color-slate-900: #201f1b;
+  --color-slate-950: #141310;
+
+  --color-rose-50: #fbf1ea;
+  --color-rose-100: #f5e3d5;
+  --color-rose-200: #ecc6aa;
+  --color-rose-300: #e0a077;
+  --color-rose-400: #d17f4c;
+  --color-rose-500: #c1622e;
+  --color-rose-600: #a95225;
+  --color-rose-700: #8d4420;
+  --color-rose-800: #73381d;
+  --color-rose-900: #5e301b;
+  --color-rose-950: #33170b;
+
+  --color-amber-50: #fbf1ea;
+  --color-amber-100: #f5e3d5;
+  --color-amber-200: #ecc6aa;
+  --color-amber-300: #e0a077;
+  --color-amber-400: #d17f4c;
+  --color-amber-500: #c1622e;
+  --color-amber-600: #a95225;
+  --color-amber-700: #8d4420;
+  --color-amber-800: #73381d;
+  --color-amber-900: #5e301b;
+  --color-amber-950: #33170b;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-slate-50);
+    color: var(--color-slate-900);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Barre de défilement discrète */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-400);
+}

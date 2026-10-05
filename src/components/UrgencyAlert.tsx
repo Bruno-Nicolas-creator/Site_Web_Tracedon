@@ -14,7 +14,7 @@ export function UrgencyAlert() {
             Détruire ses invendus est désormais illégal.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            Ce n'est plus une simple perte économique : c'est une infraction sanctionnée par de lourdes amendes administratives, encore méconnue de nombreuses entreprises.
+            Détruire un invendu, c'est gaspiller de la nourriture ou des objets encore utiles, et toutes les ressources qui ont servi à les produire. C'est aussi, désormais, une infraction sanctionnée par de lourdes amendes administratives, encore méconnue de nombreuses entreprises.
           </p>
         </div>
 

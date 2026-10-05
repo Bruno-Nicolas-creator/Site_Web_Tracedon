@@ -54,17 +54,17 @@ export function Hero({ onOpenDemo, onScrollToSimulator, onOpenAuditModal }: Hero
           {/* Institutional kicker */}
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-900 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/90 shadow-xs">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-700" />
-            <span>Plateforme SaaS Legaltech & Fiscale du don d'invendus</span>
+            <span>Traçabilité des dons d'invendus · alimentaires et matériels</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-slate-900 leading-[1.12] font-display text-balance">
-            Transformez vos invendus d'un <span className="text-amber-800 underline decoration-amber-300/80 decoration-2 underline-offset-4">risque légal</span> en un <span className="text-emerald-800 underline decoration-emerald-300/80 decoration-2 underline-offset-4">actif financier</span> automatisé.
+            Vos invendus méritent mieux que <span className="text-amber-800 underline decoration-amber-300/80 decoration-2 underline-offset-4">la benne</span>.
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            Sécurisez votre conformité aux lois Garot & AGEC. Récupérez <strong className="font-semibold text-slate-900">60 % en réduction d'impôt (art. 238 bis du CGI)</strong> et n'ayez pas à reverser <strong className="font-semibold text-slate-900">la TVA déduite à l'achat</strong>. TraceDon constitue en 3 clics un dossier justificatif complet, prêt à présenter en cas de contrôle.
+            TraceDon <strong className="font-semibold text-slate-900">digitalise et sécurise la traçabilité de vos dons alimentaires et matériels</strong>, de votre réserve jusqu'à l'association. Moins de gaspillage, moins de CO₂, et des justificatifs prêts sans ressaisie. Côté fiscalité, vos dons ouvrent droit à <strong className="font-semibold text-slate-900">60 % de réduction d'impôt</strong> (art. 238 bis du CGI) et vous évitent de reverser la TVA déduite à l'achat.
           </p>
 
           {/* Action buttons */}
@@ -74,7 +74,7 @@ export function Hero({ onOpenDemo, onScrollToSimulator, onOpenAuditModal }: Hero
               onClick={onScrollToSimulator}
               className="w-full sm:w-auto px-7 py-3.5 text-sm font-semibold text-white bg-emerald-800 hover:bg-emerald-900 transition-all rounded-full shadow-xs flex items-center justify-center gap-2 group"
             >
-              <span>Calculer mon gain fiscal</span>
+              <span>Calculer mon impact et mon gain</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
             <button
@@ -90,22 +90,22 @@ export function Hero({ onOpenDemo, onScrollToSimulator, onOpenAuditModal }: Hero
           <div className="pt-4 flex flex-wrap items-center justify-center gap-y-2 gap-x-4 text-xs font-medium text-slate-600">
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-700" />
-              Réduction d'impôt art. 238 bis CGI
+              Traçabilité numérique de bout en bout
             </span>
             <span aria-hidden="true" className="text-slate-300">·</span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-700" />
-              Scan anti-rappel RappelConso officiel
+              Signatures DocuSign
             </span>
             <span aria-hidden="true" className="text-slate-300">·</span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-700" />
-              Signatures certifiées DocuSign eIDAS
+              Impact CO₂ mesuré (ADEME Agribalyse)
             </span>
             <span aria-hidden="true" className="text-slate-300">·</span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-4 w-4 text-emerald-700" />
-              Méthodologie Agribalyse ADEME
+              Réduction d'impôt art. 238 bis
             </span>
           </div>
         </div>

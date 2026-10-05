@@ -6,6 +6,7 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ImpactSection } from './components/ImpactSection';
 import { UrgencyAlert } from './components/UrgencyAlert';
 import { RoiCalculator } from './components/RoiCalculator';
 import { ThreeStepsWorkflow } from './components/ThreeStepsWorkflow';
@@ -51,6 +52,9 @@ export default function App() {
           onScrollToSimulator={handleScrollToSimulator}
           onOpenAuditModal={() => setAuditModalOpen(true)}
         />
+
+        {/* Impact écologique mesuré par l'application */}
+        <ImpactSection />
 
         {/* Le problème : lois Garot & AGEC */}
         <UrgencyAlert />

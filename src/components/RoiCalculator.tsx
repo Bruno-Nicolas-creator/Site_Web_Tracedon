@@ -120,29 +120,37 @@ export function RoiCalculator({ onOpenDemo }: RoiCalculatorProps) {
             Donner rapporte plus que détruire. Calculez combien.
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-            Un invendu donné à une association éligible n'est plus une perte sèche : il ouvre droit à une réduction d'impôt et vous évite les frais de destruction.
+            Un invendu donné à une association éligible n'est plus une perte sèche : il nourrit ou équipe des personnes, réduit votre empreinte carbone, ouvre droit à une réduction d'impôt et vous évite les frais de destruction.
           </p>
         </div>
 
-        {/* Les deux leviers fiscaux (ex-section « Donner rapporte plus que détruire ») */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
-          <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-5 flex items-start gap-4">
-            <span className="text-4xl font-semibold font-display text-amber-900 tabular-nums shrink-0">60 %</span>
-            <div className="space-y-1">
-              <div className="font-bold text-slate-900">de réduction d'impôt sur les sociétés</div>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Calculée sur le prix de revient (pas le prix de vente), dans la limite d'un plafond annuel (art. 238 bis du CGI).
-              </p>
-            </div>
+        {/* Les trois chiffres clés : fiscalité, TVA et impact carbone (ce dernier suit la valeur saisie plus bas) */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <div className="rounded-2xl border border-amber-200 bg-amber-50/50 p-5 space-y-2">
+            <div className="text-4xl font-semibold font-display text-amber-900 tabular-nums">60 %</div>
+            <div className="font-bold text-slate-900">de réduction d'impôt sur les sociétés</div>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Calculée sur le prix de revient (pas le prix de vente), dans la limite d'un plafond annuel (art. 238 bis du CGI).
+            </p>
           </div>
-          <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-5 flex items-start gap-4">
-            <span className="text-4xl font-semibold font-display text-emerald-900 tabular-nums shrink-0">0 €</span>
-            <div className="space-y-1">
-              <div className="font-bold text-slate-900">de TVA à reverser</div>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Les dons aux associations éligibles sont dispensés de régularisation de la TVA déduite à l'achat.
-              </p>
+          <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-5 space-y-2">
+            <div className="text-4xl font-semibold font-display text-emerald-900 tabular-nums">0 €</div>
+            <div className="font-bold text-slate-900">de TVA à reverser</div>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Les dons aux associations éligibles sont dispensés de régularisation de la TVA déduite à l'achat.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-emerald-300 bg-emerald-100/60 p-5 space-y-2">
+            <div className="flex items-baseline gap-2">
+              <Leaf className="h-6 w-6 text-emerald-800 self-center" aria-hidden="true" />
+              <span className="text-4xl font-semibold font-display text-emerald-900 tabular-nums">
+                {co2AvoidedKg >= 1000 ? `${formatNumber(Math.round(co2AvoidedKg / 100) / 10)} t` : `${formatNumber(co2AvoidedKg)} kg`}
+              </span>
             </div>
+            <div className="font-bold text-slate-900">de CO₂ évités par an</div>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Estimation pour la valeur d'invendus saisie ci-dessous. Dans l'application, le calcul se fait don par don avec les données ADEME.
+            </p>
           </div>
         </div>
 

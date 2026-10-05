@@ -16,6 +16,7 @@ export function Navbar({ onOpenDemo, onScrollToSimulator }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { label: 'Impact', href: '#impact' },
     { label: 'Lois Garot & AGEC', href: '#cadre-reglementaire' },
     { label: 'Comment ça marche', href: '#parcours-automatise' },
     { label: 'Simulateur d’Économies', href: '#simulateur-fiscal' },

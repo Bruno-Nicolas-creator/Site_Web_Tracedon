@@ -21,7 +21,7 @@ export function Footer({ onOpenDemo, onOpenAuditModal, onOpenLegal }: FooterProp
               <span>TraceDon</span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed">
-              La plateforme Legaltech & Fiscale du don d'invendus alimentaires et non-alimentaires. Sécurisation Loi Garot, Loi AGEC & Art. 238 bis CGI.
+              La plateforme de traçabilité des dons d'invendus alimentaires et matériels : moins de gaspillage, impact carbone mesuré, conformité Garot & AGEC et avantages fiscaux documentés.
             </p>
             <div className="pt-2 text-xs text-slate-400">
               TraceDon SAS · Siège social : Nice, France

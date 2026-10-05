@@ -17,6 +17,7 @@ Le site est publié par Vercel à partir de la branche `master` de ce dépôt : 
 
 ## Réglages à connaître
 
+- **Non-référencement temporaire** : le site demande aux moteurs de recherche de ne pas l'indexer (balise `robots` dans `index.html` et en-tête `X-Robots-Tag` dans `vercel.json`). À retirer une fois les mentions légales remplies.
 - **Bouton « Se connecter »** : masqué tant que l'application est fermée au public. Le réafficher en passant `APPLICATION_OUVERTE` à `true` dans `src/components/Navbar.tsx`.
 - **Mentions légales** : `src/components/LegalModal.tsx`. Les champs `[À COMPLÉTER]` doivent être remplis avant toute ouverture au public.
 - **Identité visuelle** : couleurs et polices communes avec l'application, définies dans `src/index.css`.

@@ -58,7 +58,7 @@ export function ThreeStepsWorkflow({ onOpenAuditModal, onOpenDemo }: ThreeStepsW
       details: [
         'Calcul de la réduction de 60 % sur la valeur de revient, plafond annuel compris (art. 238 bis du CGI)',
         'Attestation fiscale avec montant écrit en toutes lettres signée par l’association',
-        'Inventaire horodaté pour justifier la dispense de reversement de TVA',
+        'Inventaire horodaté pour justifier la dispense de reversement de TVA (dons aux associations RUP)',
         'Calcul des kilos de CO2 évités selon la méthodologie Agribalyse / ADEME'
       ]
     }

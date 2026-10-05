@@ -51,7 +51,7 @@ export function Footer({ onOpenDemo, onOpenAuditModal, onOpenLegal }: FooterProp
               </li>
               <li>
                 <a href="#simulateur-fiscal" className="hover:text-emerald-400 transition-colors">
-                  Dispense de TVA & régularisation
+                  Dispense de TVA (associations RUP)
                 </a>
               </li>
               <li>

@@ -7,7 +7,7 @@ export function FaqSection() {
   const faqs = [
     {
       q: "Comment est calculée la réduction d’impôt de 60 % selon l'article 238 bis du CGI ?",
-      a: "La réduction fiscale de 60 % s’applique sur le coût de revient hors taxes (prix d’achat pour un distributeur ou coût de fabrication pour un industriel), et non sur le prix de vente public. Ce montant est imputé directement sur votre impôt sur les sociétés (IS) de l’exercice, dans la limite de 20 000 € ou 0,5 % du chiffre d'affaires HT (avec report possible sur 5 ans). Par ailleurs, la TVA déduite à l’achat n’a pas à être reversée : les dons aux associations éligibles sont dispensés de régularisation."
+      a: "Pour un don à une association d’intérêt général, la réduction fiscale de 60 % s’applique sur le coût de revient hors taxes (prix d’achat pour un distributeur ou coût de fabrication pour un industriel), et non sur le prix de vente public. Ce montant est imputé directement sur votre impôt sur les sociétés (IS) de l’exercice, dans la limite de 20 000 € ou 0,5 % du chiffre d'affaires HT (avec report possible sur 5 ans). Par ailleurs, si le don est fait à une association reconnue d’utilité publique (RUP), la TVA déduite à l’achat n’a pas à être reversée : ces dons sont dispensés de régularisation."
     },
     {
       q: "Quel est l’impact opérationnel pour mes équipes de quai et de magasin ?",

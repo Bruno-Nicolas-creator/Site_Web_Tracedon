@@ -64,7 +64,7 @@ export function Hero({ onOpenDemo, onScrollToSimulator, onOpenAuditModal }: Hero
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto">
-            TraceDon <strong className="font-semibold text-slate-900">digitalise et sécurise la traçabilité de vos dons alimentaires et matériels</strong>, de votre réserve jusqu'à l'association. Moins de gaspillage, moins de CO₂, et des justificatifs prêts sans ressaisie. Côté fiscalité, vos dons ouvrent droit à <strong className="font-semibold text-slate-900">60 % de réduction d'impôt</strong> (art. 238 bis du CGI) et vous évitent de reverser la TVA déduite à l'achat.
+            TraceDon <strong className="font-semibold text-slate-900">digitalise et sécurise la traçabilité de vos dons alimentaires et matériels</strong>, de votre réserve jusqu'à l'association. Moins de gaspillage, moins de CO₂, et des justificatifs prêts sans ressaisie. Côté fiscalité, vos dons à des associations d'intérêt général ouvrent droit à <strong className="font-semibold text-slate-900">60 % de réduction d'impôt</strong> (art. 238 bis du CGI) et, s'ils vont à une association reconnue d'utilité publique, vous évitent de reverser la TVA déduite à l'achat.
           </p>
 
           {/* Action buttons */}

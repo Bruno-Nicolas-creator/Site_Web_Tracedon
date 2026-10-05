@@ -7,14 +7,14 @@ export function BenchmarkTable() {
       destroy: { text: 'Aucun gain (Perte sèche)', status: 'bad' },
       manual: { text: 'Réduction de 60 % (si justificatifs complets)', status: 'warn' },
       tracedon: { text: 'Réduction de 60 % (justificatifs générés)', status: 'good' },
-      note: 'Art. 238 bis du CGI sur le prix de revient, dans la limite du plafond annuel'
+      note: 'Art. 238 bis du CGI sur le prix de revient, dans la limite du plafond annuel (associations d’intérêt général)'
     },
     {
       criteria: 'Avantage TVA',
       destroy: { text: 'Perdue (ou reversée)', status: 'bad' },
       manual: { text: 'Pas de reversement (si inventaire complet)', status: 'warn' },
       tracedon: { text: 'Pas de reversement (inventaire horodaté)', status: 'good' },
-      note: 'Dispense légale de régularisation Loi AGEC'
+      note: 'Dispense de régularisation, uniquement pour les dons aux associations reconnues d’utilité publique (RUP)'
     },
     {
       criteria: 'Risque Légal (AGEC / Garot)',

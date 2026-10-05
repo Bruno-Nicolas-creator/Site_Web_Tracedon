@@ -131,13 +131,15 @@ export function RoiCalculator({ onOpenDemo }: RoiCalculatorProps) {
             <div className="font-bold text-slate-900">de réduction d'impôt sur les sociétés</div>
             <p className="text-sm text-slate-600 leading-relaxed">
               Calculée sur le prix de revient (pas le prix de vente), dans la limite d'un plafond annuel (art. 238 bis du CGI).
+              <span className="block mt-1 text-xs text-slate-500">Dons aux associations d'intérêt général.</span>
             </p>
           </div>
           <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-5 space-y-2">
             <div className="text-4xl font-semibold font-display text-emerald-900 tabular-nums">0 €</div>
             <div className="font-bold text-slate-900">de TVA à reverser</div>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Les dons aux associations éligibles sont dispensés de régularisation de la TVA déduite à l'achat.
+              Pas de régularisation de la TVA déduite à l'achat.
+              <span className="block mt-1 text-xs text-slate-500">Uniquement pour les dons aux associations reconnues d'utilité publique (RUP).</span>
             </p>
           </div>
           <div className="rounded-2xl border border-emerald-300 bg-emerald-100/60 p-5 space-y-2">
@@ -288,7 +290,7 @@ export function RoiCalculator({ onOpenDemo }: RoiCalculatorProps) {
                   <div>
                     <div className="text-xs font-semibold text-slate-900 flex items-center gap-1.5">
                       <CheckCircle2 className="h-4 w-4 text-emerald-700" />
-                      <span>Réduction d'Impôt IS (60 % art. 238 bis CGI)</span>
+                      <span>Réduction d'Impôt IS (60 % art. 238 bis CGI, associations d'intérêt général)</span>
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
                       {excedentReportable > 0
@@ -323,7 +325,7 @@ export function RoiCalculator({ onOpenDemo }: RoiCalculatorProps) {
                       <span>TVA déduite à l'achat, à ne pas reverser</span>
                     </div>
                     <div className="text-xs text-slate-500 mt-0.5">
-                      Dispense de régularisation pour les dons aux associations éligibles. Ce n'est pas un gain : non inclus dans le total.
+                      Dispense de régularisation, uniquement pour les dons aux associations reconnues d'utilité publique (RUP). Ce n'est pas un gain : non inclus dans le total.
                     </div>
                   </div>
                   <span className="text-base font-bold text-slate-500 tabular-nums">

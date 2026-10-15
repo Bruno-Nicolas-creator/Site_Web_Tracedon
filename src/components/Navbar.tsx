@@ -1,11 +1,8 @@
 import { useState } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 
-// Adresse de l'application TraceDon (logiciel Dons Invendus) où les clients se connectent.
-const URL_CONNEXION = 'https://dons-invendus.vercel.app/connexion';
-// L'application est encore fermée au public (écran de verrouillage) : le bouton « Se connecter »
-// reste masqué jusqu'à son ouverture. Passer à true pour le réafficher.
-const APPLICATION_OUVERTE = false;
+// Application TraceDon. Le site vitrine reste sur tracedon.fr ; la connexion ouvre l'application.
+const URL_CONNEXION = 'https://tracedon.vercel.app/';
 
 interface NavbarProps {
   onOpenDemo: () => void;
@@ -52,16 +49,9 @@ export function Navbar({ onOpenDemo, onScrollToSimulator }: NavbarProps) {
           ))}
         </nav>
 
+        <div className="flex items-center gap-2 sm:gap-3">
         {/* Zone 3: 1-2 primary actions */}
         <div className="hidden sm:flex items-center gap-3">
-          {APPLICATION_OUVERTE && (
-            <a
-              href={URL_CONNEXION}
-              className="px-2 py-2 text-xs font-semibold text-slate-700 hover:text-slate-900 transition-colors whitespace-nowrap"
-            >
-              Se connecter
-            </a>
-          )}
           <button
             type="button"
             onClick={onScrollToSimulator}
@@ -97,6 +87,14 @@ export function Navbar({ onOpenDemo, onScrollToSimulator }: NavbarProps) {
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
+
+        <a
+          href={URL_CONNEXION}
+          className="inline-flex items-center px-3.5 py-2 text-xs font-semibold text-white bg-emerald-800 hover:bg-emerald-900 transition-colors rounded-full whitespace-nowrap"
+        >
+          Connexion
+        </a>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
@@ -115,14 +113,12 @@ export function Navbar({ onOpenDemo, onScrollToSimulator }: NavbarProps) {
             ))}
           </div>
           <div className="pt-3 border-t border-slate-200 flex flex-col gap-2">
-            {APPLICATION_OUVERTE && (
-              <a
-                href={URL_CONNEXION}
-                className="w-full py-2.5 text-center text-sm font-semibold text-slate-700 bg-white border border-slate-300 rounded-full"
-              >
-                Se connecter
-              </a>
-            )}
+            <a
+              href={URL_CONNEXION}
+              className="w-full py-2.5 text-center text-sm font-semibold text-white bg-emerald-800 hover:bg-emerald-900 rounded-full"
+            >
+              Connexion
+            </a>
             <button
               type="button"
               onClick={() => {

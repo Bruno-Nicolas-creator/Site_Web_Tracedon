@@ -1,6 +1,6 @@
 # TraceDon — site vitrine
 
-Site de présentation de TraceDon, nom commercial du logiciel Dons Invendus (l'application elle-même est un projet séparé, publié sur https://dons-invendus.vercel.app).
+Site de présentation de TraceDon. L'application est publiée sur https://tracedon.vercel.app/. Le bouton « Connexion » de l'en-tête y mène.
 
 Site statique construit avec Vite et React, sans serveur ni base de données. Il n'a besoin d'aucune clé ni variable d'environnement.
 
@@ -18,7 +18,7 @@ Le site est publié par Vercel à partir de la branche `master` de ce dépôt : 
 ## Réglages à connaître
 
 - **Non-référencement temporaire** : le site demande aux moteurs de recherche de ne pas l'indexer (balise `robots` dans `index.html` et en-tête `X-Robots-Tag` dans `vercel.json`). À retirer une fois les mentions légales remplies.
-- **Bouton « Se connecter »** : masqué tant que l'application est fermée au public. Le réafficher en passant `APPLICATION_OUVERTE` à `true` dans `src/components/Navbar.tsx`.
+- **Bouton « Connexion »** : à droite de l'en-tête, lien vers https://tracedon.vercel.app/ (`URL_CONNEXION` dans `src/components/Navbar.tsx`).
 - **Mentions légales** : `src/components/LegalModal.tsx`. Les champs `[À COMPLÉTER]` doivent être remplis avant toute ouverture au public.
 - **Identité visuelle** : couleurs et polices communes avec l'application, définies dans `src/index.css`.
 
